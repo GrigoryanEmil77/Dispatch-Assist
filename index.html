@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+  </head>
+
+  <body>
+    <div class="purple-border-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light purple-border">
+        <img  src="./Photo/logo1-1.jpg" class="navbar-brand">
+        <button class="navbar-toggler custom-toggler" type="button" onclick="toggleNav()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto w-100" style="padding-left: 30px">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="truckTypesDropdown" aria-haspopup="true" aria-expanded="false">
+                      Truck Types
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="truckTypesDropdown">
+                      <a class="dropdown-item" href="#DRY VAN">Dry Van</a>
+                      <a class="dropdown-item" href="#REEFER">Reefer</a>
+                      <a class="dropdown-item" href="#BOX TRUCK">Box Truck</a>
+                      <a class="dropdown-item" href="#FLATBED">Flatbed</a>
+                      <a class="dropdown-item" href="#STEP DECK">Step Deck</a>
+                      <a class="dropdown-item" href="#POWER ONLY">Power Only</a>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Customer">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#CONTACT">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary custom-btn" onclick="location.href='#SETUP';">SETUP</button>
+            </li>
+          </ul>
+        </div>
+            
+      </nav>
+    </div>
+           
+    <section class="py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <video width="580" height="340" controls>
+              <source src="./Photo/Snapinsta.app_video_D94D4C9A6B46F9CF0E58994CDF590698_video_dashinit.mp4" type="video/mp4">
+              <source src="./Photo/Snapinsta.app_video_D94D4C9A6B46F9CF0E58994CDF590698_video_dashinit.mp4" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-md-6 empower align-self-center">
+            <h1>EMPOWER YOUR<br><span>LOGISTIC BUSINESS WITH</span></h1>
+            <h1 style="color: #693285">DISPATCH ASSIST</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="full-width-section ">
+        <div class="read-more-container">
+            <h2 class="text">TYPES TRUCKS WE ARE SPECIALIZED IN</h2>
+            <div class="row mt-5" >
+                <div class="col-md-4" id="DRY VAN">
+                    <img  src="./Photo/Img1-1.jpg" class="truck">
+                    <h3 class="mt-4">DRY VAN</h3>
+                    <p>Dispatch Assist enables you to tailor your business operations by your preferences
+                      <span class="read-more-text"> 
+                        in the selecting loads that suit your schedule. We offer round-the-clock support and
+                         don't require any contracts, ensuring the flexibility necessary for your business needs.
+                        </span></p>
+                    
+                        <button type="button" class="read-more-btn">Read More</button>
+                </div>
+                <div class="col-md-4" id="REEFER">
+                    <img  src="./Photo/Img1-2.jpg" class="truck">
+                    <h3 class="mt-4">REEFER</h3>
+                    <p>With Dispatch Assist you can say goodbye to the hassle of finding loading ports for profitable<span class="read-more-text">  
+                        refrigerated cargo. We are partnering with shippers and brokers to offer premier trucking services.
+                        This allows you to prioritize driving tasks over logistics management.</span></p>
+                        <button type="button" class="read-more-btn">Read More</button>
+                </div>
+                <div class="col-md-4" id="BOX TRUCK">
+                    <img  src="./Photo/Img1-3.jpg" class="truck">
+                    <h3 class="mt-4">BOX TRUCK</h3>
+                    <p>Our extensive industry network includes thousands of Box Truck brokers and suppliers 
+                      <span class="read-more-text"> with a
+                         wide range of capabilities and expertise in the field. Additionally we provide ongoing 24/7
+                          support to ensure that you always have assistance available while on the road.</span></p>
+                          <button type="button" class="read-more-btn">Read More</button>
+                </div>
+                <div class="col-md-4" id="FLATBED">
+                    <img  src="./Photo/Img1-4.jpg" class="truck">
+                    <h3 class="mt-4">FLATBED</h3>
+                   <p>Dispatch Assist manages a significant number of  Flatbed, Step Deck and Hot Shot carriers 
+                    <span class="read-more-text"> regularly.Our
+                     top priority is to ensure that our team is 
+                    staffed with skilled dispatchers who specialize in the flatbed market.</span></p>
+                    <button type="button" class="read-more-btn">Read More</button>
+                </div>
+                <div class="col-md-4 " id="STEP DECK">
+                    <img  src="./Photo/Img1-5.jpg" class="truck">
+                    <h3 class="mt-4">STEP DECK</h3>
+                   <p>
+                    We actively develop and maintain business cooperation with various brokerage firms and 
+                    we  <span class="read-more-text">are constantly looking for reliable Step Deck drivers for ongoing cooperation.</span></p>
+                    <button type="button" class="read-more-btn">Read More</button>
+                </div>
+                <div class="col-md-4 " id="POWER ONLY">
+                    <img  src="./Photo/Img1-6.jpg" class="truck">
+                    <h3 class="mt-4">POWER ONLY</h3>
+                   <p>Our experienced and skilled dispatchers are ready to help you develop a strategy for <span class="read-more-text"> receiving 
+                    and delivering Power Only shipments. Focus on the road while we plan your trip.This 
+                    enables you to enhance your overall focus and efficiency on the road.</span></p>
+                    <button type="button" class="read-more-btn">Read More</button>
+                </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid services my-5" id="Services">
+                <h2 class="text mb-4 text-center">SERVICES WE <span>PROVIDE</span></h2>
+                <div class="row justify-content-center mt-5">
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="./Photo/Img2-1.jpg" class="provide">
+                            <p class="text">LOAD SEARCH FTL/LTL</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="./Photo/Img2-2.jpg" class="provide">
+                            <p class="text">RATE NEGOTIATION & BOOKING</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="./Photo/Img2-3.jpg" class="provide">
+                            <p class="text">BROKER SETUP</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="./Photo/Img2-4.jpg" class="provide">
+                            <p class="text">DETENTION LAYOVER TONU</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="./Photo/Img2-5.jpg" class="provide">
+                            <p class="text">INVOICING</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="./Photo/Img2-6.jpg" class="provide">
+                            <p class="text">FACTORING & INSURANCE ASSISTANCE</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="./Photo/Img2-7.jpg" class="provide">
+                            <p class="text">24/7 SUPPORT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="container mt-5" id="Customer">
+              <h2 class="text-center" >Customer <span>Reviews</span></h2>
+              <div class="row custom mt-5">
+                <div class="col-md-4">
+                  <div>
+                    <div class="card-body review-card-body">
+                      <img src="Photo/IMG_20240707_194308.jpg" alt="Customer" class="review-image"> 
+                      <p class="customer-name">Darrell Johnson</p>
+                      <div class="stars">★★★★★</div>
+                      <p class="review-text" id="review1">I just wanted to share a quick note and let you guys know that you are doing a really good job. I'm glad I decided to work with you. It's really great how easy your dispatch service is. I never have any problems at all. Keep up the great work!</p>
+                      <button type="button" class="read-more-btn" onclick="toggleReadMore('review1')">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <div class="card-body review-card-body">
+                      <img src="Photo/IMG_20240707_193014.jpg" alt="Customer" class="review-image">
+                      <p class="customer-name">Paula Feaster</p>
+                      <div class="stars">★★★★★</div>
+                      <p class="review-text" id="review2">After just one month as a client, I was completely impressed by the speed of communication and the new level of rate negotiations. The team is constantly open to my feedback and not only listens to what I have to say, but also expands the capabilities of my company.</p>
+                      <button type="button" class="read-more-btn" onclick="toggleReadMore('review2')">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <div class="card-body review-card-body"> 
+                      <img src="Photo/IMG_20240707_193102.jpg" alt="Customer" class="review-image">
+                      <p class="customer-name">Victoria Oguagha</p>
+                      <div class="stars">★★★★★</div>
+                      <p class="review-text" id="review3">Working with Dispatch Assist is a real pleasure. We were impressed with such attention to detail, communication skills and professional approach to our deadlines and the company. They were very helpful with our shipping and always went the extra mile for us when it came to the final stages of loading. We highly recommend working with them!</p>
+                      <button type="button" class="read-more-btn" onclick="toggleReadMore('review3')">Read More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         
+          
+        
+            <div id="carouselExampleControls" class="carousel slide mt-5" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-body review-card-body">
+                    <img src="Photo/IMG_20240707_194308.jpg" alt="Customer" class="review-image"> 
+                    <p class="customer-name">Darrell Johnson</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text" id="review4">I just wanted to share a quick note and let you guys know that you are doing a really good job. I'm glad I decided to work with you. It's really great how easy your dispatch service is. I never have any problems at all. Keep up the great work!</p>
+                    <button type="button" class="read-more-btn" onclick="toggleReadMore('review4')">Read More</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-body review-card-body">
+                    <img src="Photo/IMG_20240707_193014.jpg" alt="Customer" class="review-image">
+                    <p class="customer-name">Paula Feaster</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text" id="review5">After just one month as a client, I was completely impressed by the speed of communication and the new level of rate negotiations. The team is constantly open to my feedback and not only listens to what I have to say, but also expands the capabilities of my company.</p>
+                    <button type="button" class="read-more-btn" onclick="toggleReadMore('review5')">Read More</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-body review-card-body"> 
+                    <img src="Photo/IMG_20240707_193102.jpg" alt="Customer" class="review-image">
+                    <p class="customer-name">Victoria Oguagha</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text" id="review6">Working with Dispatch Assist is a real pleasure. We were impressed with such attention to detail, communication skills and professional approach to our deadlines and the company. They were very helpful with our shipping and always went the extra mile for us when it came to the final stages of loading. We highly recommend working with them!</p>
+                    <button type="button" class="read-more-btn" onclick="toggleReadMore('review6')">Read More</button>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+                
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon  " aria-hidden="true"></span>
+               
+              </a>
+            </div>
+          </div>
+            
+
+<div class="container mt-5">
+  <form id="form">
+    <fieldset>
+      <h2 class="text-center">REQUEST A <span style="color: #693285">CALLBACK</span></h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" id="companyName" placeholder="Company Name:*">
+          </div>
+          <div class="form-group mt-5">
+            <input type="email" class="form-control" id="email" placeholder="E-mail:*">
+          </div>
+          <div class="form-group mt-5">
+            <input type="tel" class="form-control" id="phone" placeholder="Phone Number:*">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <select class="form-control" id="equipmentType">
+              <option>Select Equipment Type:*</option>          
+              <option>Dry Van</option>
+              <option>Reefer</option>
+              <option>Box Truck</option>
+              <option>Flat Bed</option>
+              <option>Step Deck</option>
+              <option>Power Only</option>                        
+            </select>
+          </div>
+          <div class="form-group mt-5">
+            <textarea class="form-control" id="details" rows="4.5px" placeholder="Additional Information:*"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 text-center">
+          <button type="submit" class="btn btn-primary submit">SUBMIT</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+         <footer class="text-white mt-7 pb-6 w-100" style="background-color:#9e7eae;">
+          <div class="container text-center text-md-left">
+              <div class="row text-center mb-3 mt-5">
+                <div class="mt-5">
+                    <img src="./Photo/logo1-2.jpg" class="brand-logo">
+                </div>
+            </div>
+      
+              <div class="row text-center text-md-left" id="CONTACT">
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+                      <h5>CONTACT US</h5>
+                      <a href="mailto:dispatchassistinc@gmail.com" class="text-white">dispatchassistinc@gmail.com</a>
+                      <p>302 595 5561</p>
+                  </div>
+      
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+                      <h5 class="text-uppercase mb-4 font-weight-bold">FOLLOW US</h5>
+                      <p>
+                          <a href="#" class="text-white"><i class="fab fa-facebook-f mr-3"></i>Facebook</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-white"><i class="fab fa-twitter mr-3"></i>Twitter</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-white"><i class="fab fa-instagram mr-3"></i>Instagram</a>
+                      </p>
+                      <p>
+                          <a href="#" class="text-white"><i class="fab fa-linkedin mr-3"></i>LinkedIn</a>
+                      </p>
+                  </div>
+      
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+                      <h5 class="text-uppercase mb-4 font-weight-bold">Truck Types</h5>
+                      <p><a href="#DRY VAN" class="text-white">Dry Van</a></p>
+                      <p><a href="#REEFER" class="text-white">Reefer</a></p>
+                      <p><a href="#BOX TRUCK" class="text-white">Box Truck</a></p>
+                      <p><a href="#FLATBED" class="text-white">Flatbed</a></p>
+                      <p><a href="#STEP DECK" class="text-white">Step Deck</a></p>
+                      <p><a href="#POWER ONLY" class="text-white">Power only</a></p>
+                  </div>
+      
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 font-weight-bold">SERVICES WE PROVIDE</h5>
+                      <p class="text-white">LOAD SEARCH FTL/LTL</p>
+                      <p class="text-white">RATE NEGOTIATION & BOOKING</p>
+                      <p class="text-white">BROKER SETUP</p>
+                      <p class="text-white">DETENTION LAYOVER TONU</p>
+                      <p class="text-white">INVOICING</p>
+                      <p class="text-white">FACTORING & INSURANCE ASSISTANCE</p>
+                      <p class="text-white">24/7 SUPPORT</p>
+                  </div>
+              </div>
+      
+              <hr class="mb-4">
+      
+              <div class="row align-items-center">
+                  <div class="col-md-12">
+                      <p class="text-center">© 2024 Dispatch Experts. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+
+      <script src="./script/script.js"></script>
+  </body>
+  </html> 
+   
+
+
+
+
+
+
+
+
+
+
